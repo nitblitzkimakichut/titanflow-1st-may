@@ -148,7 +148,7 @@ export default function ThankYou() {
                   <span className="bg-gradient-to-r from-emerald-400 to-emerald-200 bg-clip-text text-transparent">
                     STEP 2:
                   </span>{" "}
-                  See what our clients are saying about us
+                  Confirm your call
                 </h3>
 
                 {/* Image */}

@@ -466,7 +466,10 @@ export default function Booking() {
           
           <div className="text-center">
             <Link href="/case-studies">
-              <Button className="bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-700 hover:to-emerald-600 text-white px-8 py-6 rounded-xl text-lg font-bold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+              <Button
+                className="bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-700 hover:to-emerald-600 text-white px-8 py-6 rounded-xl text-lg font-bold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
+                asChild
+              >
                 <span className="flex items-center">
                   View All Case Studies
                   <ArrowLeft className="ml-2 h-5 w-5 rotate-180" />

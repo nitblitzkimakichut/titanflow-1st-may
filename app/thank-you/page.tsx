@@ -117,7 +117,7 @@ export default function ThankYou() {
                 </p>
               </motion.div>
 
-              {/* Step 1 */}
+              {/* Step 1 (now the image) */}
               <motion.div 
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -128,16 +128,21 @@ export default function ThankYou() {
                   <span className="bg-gradient-to-r from-emerald-400 to-emerald-200 bg-clip-text text-transparent">
                     STEP 1:
                   </span>{" "}
-                  Complete this video about our AI, it is absolutely necessary before we speak.
+                  Confirm your call
                 </h3>
-
-                {/* Video Container */}
-                <div className="relative w-full max-w-3xl mx-auto">
-                  <WistiaPlayer videoId="zcvyb92ww5" />
+                <div className="relative w-full h-[400px] mb-8 rounded-lg overflow-hidden bg-black/20">
+                  <Image
+                    src="https://iili.io/3NTUt0Q.md.jpg"
+                    alt="3NTUt0Q.md.jpg"
+                    fill
+                    className="object-contain"
+                    priority
+                    unoptimized
+                  />
                 </div>
               </motion.div>
 
-              {/* Step 2 */}
+              {/* Step 2 (video below image) */}
               <motion.div 
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -148,19 +153,10 @@ export default function ThankYou() {
                   <span className="bg-gradient-to-r from-emerald-400 to-emerald-200 bg-clip-text text-transparent">
                     STEP 2:
                   </span>{" "}
-                  Confirm your call
+                  Complete this video about our AI, it is absolutely necessary before we speak.
                 </h3>
-
-                {/* Image */}
-                <div className="relative w-full h-[400px] mb-8 rounded-lg overflow-hidden bg-black/20">
-                  <Image
-                    src="https://iili.io/3XMRsrx.md.png"
-                    alt="Client Results"
-                    fill
-                    className="object-contain"
-                    priority
-                    unoptimized
-                  />
+                <div className="relative w-full max-w-3xl mx-auto">
+                  <WistiaPlayer videoId="zcvyb92ww5" />
                 </div>
               </motion.div>
 
